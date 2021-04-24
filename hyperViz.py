@@ -3,6 +3,8 @@ See readme.md for more on the project
 """
 
 import pandas as pd
+import matplotlib
+matplotlib.use('MacOSX')
 import matplotlib.pyplot as plt
 from sample_generator import *
 
@@ -21,8 +23,11 @@ discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
 
 
 #All the disciplines mentioned in the csv will be in this list
-total_disciplines = data.loc[:,'Disciplines']
-total_disciplines = total_disciplines.tolist()
+# Use the two lines below when reading the disciplines from the csv
+# total_disciplines = data.loc[:,'Disciplines']
+# total_disciplines = total_disciplines.tolist()
+# When taking a sample from the sample generator, use the following line
+total_disciplines = genSample(15)
 
 
 #This function draws the first basic bar chart: number of people in each discipline
@@ -50,13 +55,15 @@ def disciplineCount():
     
     plt.bar(discipline_count.keys(), discipline_count.values())
     plt.xticks(rotation = 90)
+    plt.ylabel("Number of people")
+    plt.savefig('disciplineCount', bbox_inches='tight')
 
 #This function draws the basic bar chart of how many people selected each number of disciplines
 def disciplineFreq():
     #Need to ignore whatever was entered in the 'Other' field
     #frequencies: list where every entry corresponds to an answer and every value to the number of disciplines in it
     frequencies = []
-    for entry in data.loc[:,'Disciplines']:
+    for entry in total_disciplines:
         entry = entry.split(";")
         count = 0
         for discipline in entry:
@@ -77,9 +84,17 @@ def disciplineFreq():
     #These first two lines are just to force y labels to be integers
     ax = plt.figure().gca()
     ax.yaxis.get_major_locator().set_params(integer=True)
-    
     plt.bar(keys, values)
+    plt.ylabel("Number of people")
+    plt.xlabel("Number of disciplines")
+    plt.savefig('disciplineFreq')
 
 
+# Main program
+
+disciplineCount()
+disciplineFreq()
 
 
+# print(total_disciplines)
+# print(type(total_disciplines))
