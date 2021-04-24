@@ -15,7 +15,7 @@ discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
 #Later on, we can have tweakable probability parameters to get more reasonable samples
 
 #This function generates a random sample
-#TODO: fix the first ; from each answer
+#TODO: remove the final ; from each answer!
 def genSample(size):
     sample = []
     for a in range(size):
@@ -28,6 +28,7 @@ def genSample(size):
             while discipline_names[candidate] in answer:
                 candidate = random.randint(0,len(discipline_names)-1)
             answer +=  discipline_names[candidate] + ";"
+        answer = answer[:-1]
         sample.append(answer)
     return sample
             

@@ -3,8 +3,8 @@ See readme.md for more on the project
 """
 
 import pandas as pd
-import matplotlib
-matplotlib.use('MacOSX')
+# import matplotlib
+# matplotlib.use('MacOSX')
 import matplotlib.pyplot as plt
 from sample_generator import *
 
@@ -92,9 +92,39 @@ def disciplineFreq():
 
 # Main program
 
-disciplineCount()
-disciplineFreq()
-
+# disciplineCount()
+# disciplineFreq()
 
 # print(total_disciplines)
 # print(type(total_disciplines))
+
+
+"""
+Testing around the concept of chord diagrams
+"""
+
+from chord import Chord
+
+Chord.user = "pauenmo@gmail.com"
+Chord.key = "CP-fdc99bda-356e-4947-a76d-2bd4b3cec8d2"
+
+# Basic chord diagram
+
+# matrix = [
+#     [0, 5, 6, 4, 7, 4],
+#     [5, 0, 5, 4, 6, 5],
+#     [6, 5, 0, 4, 5, 5],
+#     [4, 4, 4, 0, 5, 5],
+#     [7, 6, 5, 5, 0, 4],
+#     [4, 5, 5, 5, 4, 0],
+# ]
+
+# names = ["Action", "Adventure", "Comedy", "Drama", "Fantasy", "Thriller"]
+
+# Chord(matrix, names).to_html('out.html')
+
+# First step: automatically create the matrix, from the sample
+
+
+
+
