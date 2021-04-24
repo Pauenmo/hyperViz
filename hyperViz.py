@@ -10,7 +10,7 @@ from sample_generator import *
 
 
 #First, we read the csv into a dataframe
-data = pd.read_csv('Test_Form.csv')
+data = pd.read_csv('2021.04.24.csv')
 
 #To see the headers of the columns:
 # headers = data.iloc[0,:]
@@ -24,13 +24,13 @@ discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
 
 #All the disciplines mentioned in the csv will be in this list
 # Use the two lines below when reading the disciplines from the csv
-# total_disciplines = data.loc[:,'Disciplines']
-# total_disciplines = total_disciplines.tolist()
+total_disciplines = data.loc[:,'Disciplines']
+total_disciplines = total_disciplines.tolist()
 # When taking a sample from the sample generator, use the following line
-total_disciplines = genSample(15)
+# total_disciplines = genSample(15)
 
 
-#This function draws the first basic bar chart: number of people in each discipline
+# This function draws the first basic bar chart: number of people in each discipline
 def disciplineCount():
     #Dictionary with the disciplines as keys and the number of times they are in the form as values
     discipline_count = {}
@@ -47,6 +47,8 @@ def disciplineCount():
                 discipline_count[discipline] = count
                 
     print("discipline_count: ", discipline_count)
+
+    discipline_count = {k: v for k, v in sorted(discipline_count.items(), reverse=True, key=lambda item: item[1])}
                 
     #Finally, we draw this as a bar chart
     #These first two lines are just to force y labels to be integers
@@ -56,7 +58,7 @@ def disciplineCount():
     plt.bar(discipline_count.keys(), discipline_count.values())
     plt.xticks(rotation = 90)
     plt.ylabel("Number of people")
-    plt.savefig('disciplineCount', bbox_inches='tight')
+    plt.savefig('disciplineCount.png', bbox_inches='tight')
 
 #This function draws the basic bar chart of how many people selected each number of disciplines
 def disciplineFreq():
@@ -87,43 +89,17 @@ def disciplineFreq():
     plt.bar(keys, values)
     plt.ylabel("Number of people")
     plt.xlabel("Number of disciplines")
-    plt.savefig('disciplineFreq')
+    plt.savefig('disciplineFreq.png')
 
 
 # Main program
 
-# disciplineCount()
-# disciplineFreq()
+disciplineCount()
+disciplineFreq()
 
 # print(total_disciplines)
 # print(type(total_disciplines))
 
-
-"""
-Testing around the concept of chord diagrams
-"""
-
-from chord import Chord
-
-Chord.user = "pauenmo@gmail.com"
-Chord.key = "CP-fdc99bda-356e-4947-a76d-2bd4b3cec8d2"
-
-# Basic chord diagram
-
-# matrix = [
-#     [0, 5, 6, 4, 7, 4],
-#     [5, 0, 5, 4, 6, 5],
-#     [6, 5, 0, 4, 5, 5],
-#     [4, 4, 4, 0, 5, 5],
-#     [7, 6, 5, 5, 0, 4],
-#     [4, 5, 5, 5, 4, 0],
-# ]
-
-# names = ["Action", "Adventure", "Comedy", "Drama", "Fantasy", "Thriller"]
-
-# Chord(matrix, names).to_html('out.html')
-
-# First step: automatically create the matrix, from the sample
 
 
 
