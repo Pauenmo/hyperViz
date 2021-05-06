@@ -2,6 +2,8 @@
 Testing around the concept of chord diagrams
 """
 
+# TODO: make sure that the labels do not get cutoff
+
 from chord import Chord
 from sample_generator import *
 import itertools
@@ -14,23 +16,6 @@ Chord.key = "CP-fdc99bda-356e-4947-a76d-2bd4b3cec8d2"
 discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
                     'Linguistics', 'Arts', 'Mathematics', 'Cognitive Science',
                     'Biology', 'Education', 'Computer Science']
-
-# Basic chord diagram, for reference
-
-# matrix = [
-#     [0, 5, 6, 4, 7, 4],
-#     [5, 0, 5, 4, 6, 5],
-#     [6, 5, 0, 4, 5, 5],
-#     [4, 4, 4, 0, 5, 5],
-#     [7, 6, 5, 5, 0, 4],
-#     [4, 5, 5, 5, 4, 0],
-# ]
-
-# names = ["Action", "Adventure", "Comedy", "Drama", "Fantasy", "Thriller"]
-
-# Chord(matrix, names).to_html('out.html')
-
-
 
 # First step: automatically create the matrix, from the randomly generated sample
 
@@ -50,7 +35,7 @@ for entry in total_disciplines:
     for discipline in entry:
         if discipline not in discipline_names:
             entry.remove(discipline)
-    if len(entry)>2:
+    if len(entry)==2:
         pairs = list(itertools.combinations(entry, 2))        
         for pair in pairs:
             pair = list(pair)
@@ -64,5 +49,5 @@ for entry in total_disciplines:
         
 print(matrix)
 
-Chord(matrix, discipline_names).to_html('testing.html')
+Chord(matrix, discipline_names).to_html('chord_test_02.html')
 

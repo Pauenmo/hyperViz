@@ -48,6 +48,7 @@ def disciplineCount():
                 
     print("discipline_count: ", discipline_count)
 
+    # This line is just to order the dictionary (and hence the graph) by descendig value
     discipline_count = {k: v for k, v in sorted(discipline_count.items(), reverse=True, key=lambda item: item[1])}
                 
     #Finally, we draw this as a bar chart
@@ -96,9 +97,6 @@ def disciplineFreq():
 
 disciplineCount()
 disciplineFreq()
-
-# print(total_disciplines)
-# print(type(total_disciplines))
 
 
 
