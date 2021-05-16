@@ -4,7 +4,7 @@ Testing around the concept of chord diagrams
 
 # TODO: make sure that the labels do not get cutoff
 
-# from hyperViz import disciplineCount
+from hyperViz import disciplineCount
 from chord import Chord
 from sample_generator import *
 import itertools
@@ -60,4 +60,15 @@ for entry in total_disciplines:
             matrix[pair[1]][pair[0]] += 1
         
 # print(matrix)
-Chord(matrix, discipline_names).to_html('2021.05.16-chord_diag.html')
+# Chord(matrix, discipline_names).to_html('2021.05.16-chord_diag.html')
+
+# TODO: for each arity, two different .csv counting number of times mentioned
+# 1.- answers with that exact arity
+# 2.- answers with arity same or more
+# Example, for arity 3, the first csv counts the number of times each threesome of disciplines is mentioned exactly
+# And the second csv counts the number of times the threesome gets mentioned in total_disciplines
+
+test_list = ['Philosophy', 'Complexity', 'Anthropology']
+for arity in range(1, len(test_list)+1):
+    items = list(itertools.combinations(test_list, arity))
+    print(items)

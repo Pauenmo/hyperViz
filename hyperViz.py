@@ -10,7 +10,7 @@ from sample_generator import *
 
 
 #First, we read the csv into a dataframe
-data = pd.read_csv('2021.04.24.csv')
+data = pd.read_csv('2021.05.16.csv')
 
 #To see the headers of the columns:
 # headers = data.iloc[0,:]
@@ -59,7 +59,7 @@ def disciplineCount():
     plt.bar(discipline_count.keys(), discipline_count.values())
     plt.xticks(rotation = 90)
     plt.ylabel("Number of people")
-    plt.savefig('disciplineCount.png', bbox_inches='tight')
+    plt.savefig('2021.05.16-count.png', bbox_inches='tight')
 
 #This function draws the basic bar chart of how many people selected each number of disciplines
 def disciplineFreq():
@@ -90,13 +90,13 @@ def disciplineFreq():
     plt.bar(keys, values)
     plt.ylabel("Number of people")
     plt.xlabel("Number of disciplines")
-    plt.savefig('disciplineFreq.png')
+    plt.savefig('2021.05.16-freq.png')
 
 
 # Main program
-
 disciplineCount()
 disciplineFreq()
+
 
 
 
