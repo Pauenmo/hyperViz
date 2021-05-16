@@ -104,11 +104,26 @@ def genExactDicts():
 
 # this generates all the cumulative dictionaries of all the possible arities
 def genCumulativeDicts():
-    pass
+    for arity in range(1, len(discipline_names)+1):
+        cumulative_dict = {}
+        tuples = list(itertools.combinations(discipline_names, arity))
+        for tuple in tuples:
+            cumulative_dict[tuple] = 0
+        for entry in total_disciplines:
+            entry = clean(entry.split(";"))
+            if len(entry) >= arity:
+                entry_tuples = list(itertools.combinations(entry, arity))
+                for t in entry_tuples:
+                    cumulative_dict[t] += 1
+            filename = './output_csvs/cumulativeDict-arity-' + str(arity) + '.csv'
+            with open(filename, 'w') as f:
+                for key in cumulative_dict.keys():
+                    f.write("%s,%s\n"%(key,cumulative_dict[key]))
 
+genExactDicts()
+genCumulativeDicts()
 
-# genExactDicts()
-
+# TODO: program reality checks for these functions!
 
 
 
