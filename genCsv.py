@@ -4,7 +4,6 @@ Testing around the concept of chord diagrams
 
 # TODO: make sure that the labels do not get cutoff
 
-from hyperViz import disciplineCount
 from chord import Chord
 from sample_generator import *
 import itertools
@@ -68,7 +67,50 @@ for entry in total_disciplines:
 # Example, for arity 3, the first csv counts the number of times each threesome of disciplines is mentioned exactly
 # And the second csv counts the number of times the threesome gets mentioned in total_disciplines
 
-test_list = ['Philosophy', 'Complexity', 'Anthropology']
-for arity in range(1, len(test_list)+1):
-    items = list(itertools.combinations(test_list, arity))
-    print(items)
+# test_list = ['Philosophy', 'Complexity', 'Anthropology']
+# for arity in range(1, len(test_list)+1):
+#     items = list(itertools.combinations(test_list, arity))
+#     print(items)
+
+"""
+Writing to csv
+"""
+import csv
+
+
+# my_dict = {('Philosophy', 'Complexity', 'Anthropology'):2,  'aaa':1, '2': 'bbb', '3': 'ccc'}
+# with open('./exact_csvs/test.csv', 'w') as f:
+#     for key in my_dict.keys():
+#         f.write("%s,%s\n"%(key,my_dict[key]))
+
+
+# this generates all the exact dictionaries of all the possible arities
+def genExactDicts():
+    for arity in range(1, len(discipline_names)+1):
+        exact_dict = {}
+        tuples = list(itertools.combinations(discipline_names, arity))
+        for tuple in tuples:
+            exact_dict[tuple] = 0
+        for entry in total_disciplines:
+            entry = clean(entry.split(";"))
+            if len(entry) == arity:
+                entry_tuples = list(itertools.combinations(entry, arity))
+                for t in entry_tuples:
+                    exact_dict[t] += 1
+        filename = './output_csvs/exactDict-arity-' + str(arity) + '.csv'
+        with open(filename, 'w') as f:
+            for key in exact_dict.keys():
+                f.write("%s,%s\n"%(key,exact_dict[key]))
+
+# this generates all the cumulative dictionaries of all the possible arities
+def genCumulativeDicts():
+    pass
+
+
+# genExactDicts()
+
+
+
+
+
+    
