@@ -34,10 +34,10 @@ def clean(l):
 # First step: automatically create the matrix, from the randomly generated sample
 
 #First, we read the csv into a dataframe
-data = pd.read_csv('2021.05.16.csv')
+data = pd.read_csv('finalNN2021.csv')
 #All the disciplines mentioned in the csv will be in this list
 # Use the two lines below when reading the disciplines from the csv
-total_disciplines = data.loc[:,'Disciplines']
+total_disciplines = data.loc[:,"What disciplines better represent your research activity or interests?"]
 total_disciplines = total_disciplines.tolist()
 # When taking a sample from the sample generator, use the following line
 # total_disciplines = genSample(15)
@@ -60,4 +60,4 @@ for entry in total_disciplines:
             matrix[pair[1]][pair[0]] += 1
         
 # print(matrix)
-Chord(matrix, discipline_names).to_html('2021.05.16-chord_diag.html')
+Chord(matrix, discipline_names).to_html('./final_outputs/chord_diagram.html')

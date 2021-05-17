@@ -97,7 +97,7 @@ def genExactDicts():
                 entry_tuples = list(itertools.combinations(entry, arity))
                 for t in entry_tuples:
                     exact_dict[t] += 1
-        filename = './output_csvs/exactDict-arity-' + str(arity) + '.csv'
+        filename = './final_outputs/exactDict-arity-' + str(arity) + '.csv'
         with open(filename, 'w') as f:
             for key in exact_dict.keys():
                 f.write("%s,%s\n"%(key,exact_dict[key]))
@@ -115,7 +115,7 @@ def genCumulativeDicts():
                 entry_tuples = list(itertools.combinations(entry, arity))
                 for t in entry_tuples:
                     cumulative_dict[t] += 1
-            filename = './output_csvs/cumulativeDict-arity-' + str(arity) + '.csv'
+            filename = './final_outputs/cumulativeDict-arity-' + str(arity) + '.csv'
             with open(filename, 'w') as f:
                 for key in cumulative_dict.keys():
                     f.write("%s,%s\n"%(key,cumulative_dict[key]))

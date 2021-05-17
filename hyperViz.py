@@ -10,7 +10,7 @@ from sample_generator import *
 
 
 #First, we read the csv into a dataframe
-data = pd.read_csv('2021.05.16.csv')
+data = pd.read_csv('finalNN2021.csv')
 
 #To see the headers of the columns:
 # headers = data.iloc[0,:]
@@ -24,7 +24,7 @@ discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
 
 #All the disciplines mentioned in the csv will be in this list
 # Use the two lines below when reading the disciplines from the csv
-total_disciplines = data.loc[:,'Disciplines']
+total_disciplines = data.loc[:,"What disciplines better represent your research activity or interests?"]
 total_disciplines = total_disciplines.tolist()
 # When taking a sample from the sample generator, use the following line
 # total_disciplines = genSample(15)
@@ -59,7 +59,7 @@ def disciplineCount():
     plt.bar(discipline_count.keys(), discipline_count.values())
     plt.xticks(rotation = 90)
     plt.ylabel("Number of people")
-    plt.savefig('2021.05.16-count.png', bbox_inches='tight')
+    plt.savefig('./final_outputs/people_per_discipline.png', bbox_inches='tight')
 
 #This function draws the basic bar chart of how many people selected each number of disciplines
 def disciplineFreq():
@@ -90,7 +90,7 @@ def disciplineFreq():
     plt.bar(keys, values)
     plt.ylabel("Number of people")
     plt.xlabel("Number of disciplines")
-    plt.savefig('2021.05.16-freq.png')
+    plt.savefig('./final_outputs/number_of_disciplines.png')
 
 
 # Main program
