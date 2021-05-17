@@ -60,4 +60,12 @@ for entry in total_disciplines:
             matrix[pair[1]][pair[0]] += 1
         
 # print(matrix)
-Chord(matrix, discipline_names).to_html('./final_outputs/chord_diagram.html')
+
+
+# discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
+#                     'Linguistics', 'Arts', 'Mathematics', 'Cognitive Science',
+#                     'Biology', 'Education', 'Computer Science']
+
+# TODO: change the colors, assigning one to each discipline
+hex_colors = ["#ff0000", "#80ff00", "#00ffff", "#0040ff", "#8000ff", "#ff00ff", "#ffbf00", "#ffff99", "#66ff99", "#ff6666"]
+Chord(matrix, discipline_names, colors=hex_colors, padding=0.15,font_size_large="15.4px", width=600).to_html('./final_outputs/chord_diagram.html')
