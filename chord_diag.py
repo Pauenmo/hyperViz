@@ -18,6 +18,10 @@ discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
                     'Linguistics', 'Arts', 'Mathematics', 'Cognitive Science',
                     'Biology', 'Education', 'Computer Science']
 
+discipline_names_renamed = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
+                    'Linguistics', 'Arts', 'Mathematics', 'Cognition',
+                    'Biology', 'Education', 'Computation']
+
 # utility: cleans list from answers from the 'other' field
 def clean(l):
     for e in l:
@@ -66,6 +70,6 @@ for entry in total_disciplines:
 #                     'Linguistics', 'Arts', 'Mathematics', 'Cognitive Science',
 #                     'Biology', 'Education', 'Computer Science']
 
-# TODO: change the colors, assigning one to each discipline
-hex_colors = ["#ff0000", "#80ff00", "#00ffff", "#0040ff", "#8000ff", "#ff00ff", "#ffbf00", "#ffff99", "#66ff99", "#ff6666"]
-Chord(matrix, discipline_names, colors=hex_colors, padding=0.15,font_size_large="15.4px", width=600).to_html('./final_outputs/chord_diagram.html')
+
+hex_colors = ["#ff0000", "#80ff00", "#0040ff", "#ff9305", "#8000ff", "#19e36d", "#b51f71", "#c99c30", "#02ddfa", "#0a0a0a", "#ddff00"]
+Chord(matrix, discipline_names_renamed, colors=hex_colors, padding=0.15,font_size_large="15.4px", width=600).to_html('./final_outputs/chord_diagram.html')
