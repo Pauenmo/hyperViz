@@ -49,29 +49,29 @@
         font-family: "Lato", sans-serif;
       }
 
-      #chart-ad03fbe9, #featured-chart-ad03fbe9 {
+      #chart-3e9aecd7, #featured-chart-3e9aecd7 {
         font-size: 16px;
         font-family: "Lato", sans-serif;
         text-align: center;
         fill: #454545;
       }
 
-      #chart-ad03fbe9 svg, #featured-chart-ad03fbe9 svg {
-        max-width: 700.0px;
+      #chart-3e9aecd7 svg, #featured-chart-3e9aecd7 svg {
+        max-width: 600.0px;
       }
 
-      .details_thumbs-chart-ad03fbe9 {
+      .details_thumbs-chart-3e9aecd7 {
         margin:5.0px;
         max-width:85.0px;
         padding:0;
         display:inline-block; 
       }
 
-      .details_thumbs-chart-ad03fbe9 img {
+      .details_thumbs-chart-3e9aecd7 img {
         max-width:85.0px;
       }
 
-      .details_thumbs-chart-ad03fbe9 figcaption {
+      .details_thumbs-chart-3e9aecd7 figcaption {
         text-align: center;
         font-size: 14.0px;
       }
@@ -90,8 +90,8 @@
       }
 
       @media (min-width: 600px) {
-				#chart-ad03fbe9, #featured-chart-ad03fbe9 {
-					font-size: 20px;
+				#chart-3e9aecd7, #featured-chart-3e9aecd7 {
+					font-size: 15.4px;
 				}
 
         .arc_numbers{
@@ -101,7 +101,7 @@
     </style>
   </head>
   <body>
-    <div id="chart-ad03fbe9" class="chord">
+    <div id="chart-3e9aecd7" class="chord">
     </div>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
@@ -123,12 +123,12 @@
         bottom: 100.0
       };
 
-      width = Math.min(window.innerWidth, 700.0) - margin.left - margin.right;
-      height = Math.min(window.innerWidth, 700.0) - margin.top - margin.bottom;
+      width = Math.min(window.innerWidth, 600.0) - margin.left - margin.right;
+      height = Math.min(window.innerWidth, 600.0) - margin.top - margin.bottom;
 
-      tag_id = "chart-ad03fbe9";
-      Names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics', 'Linguistics', 'Arts', 'Mathematics', 'Cognitive Science', 'Biology', 'Education', 'Computer Science'];
-      colors = d3.schemeSet1;
+      tag_id = "chart-3e9aecd7";
+      Names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics', 'Linguistics', 'Arts', 'Mathematics', 'Cognition', 'Biology', 'Education', 'Computation'];
+      colors = ['#ff0000', '#80ff00', '#0040ff', '#ff9305', '#8000ff', '#19e36d', '#b51f71', '#c99c30', '#02ddfa', '#0a0a0a', '#ddff00'];
       opacityDefault = 0.8;
       matrix = [[0.0, 25.0, 9.0, 28.0, 8.0, 9.0, 46.0, 29.0, 12.0, 9.0, 30.0], [25.0, 0.0, 4.0, 22.0, 9.0, 8.0, 25.0, 24.0, 16.0, 8.0, 27.0], [9.0, 4.0, 0.0, 5.0, 4.0, 5.0, 9.0, 9.0, 5.0, 2.0, 6.0], [28.0, 22.0, 5.0, 0.0, 6.0, 6.0, 39.0, 16.0, 11.0, 8.0, 24.0], [8.0, 9.0, 4.0, 6.0, 0.0, 6.0, 8.0, 12.0, 6.0, 5.0, 11.0], [9.0, 8.0, 5.0, 6.0, 6.0, 0.0, 11.0, 5.0, 4.0, 3.0, 5.0], [46.0, 25.0, 9.0, 39.0, 8.0, 11.0, 0.0, 28.0, 18.0, 19.0, 50.0], [29.0, 24.0, 9.0, 16.0, 12.0, 5.0, 28.0, 0.0, 16.0, 18.0, 29.0], [12.0, 16.0, 5.0, 11.0, 6.0, 4.0, 18.0, 16.0, 0.0, 5.0, 17.0], [9.0, 8.0, 2.0, 8.0, 5.0, 3.0, 19.0, 18.0, 5.0, 0.0, 12.0], [30.0, 27.0, 6.0, 24.0, 11.0, 5.0, 50.0, 29.0, 17.0, 12.0, 0.0]];
       details = [];
@@ -174,7 +174,7 @@
 
       //A "custom" d3 chord function that automatically sorts the order of the chords in such a manner to reduce overlap
       var chord = customChordLayout()
-        .padding(0.01)
+        .padding(0.15)
         .sortChords(d3.descending) //which chord should be shown on top when chords cross. Now the biggest chord is at the bottom
         .matrix(matrix);
 
@@ -581,7 +581,7 @@
               
               var figures = '';
               for(var i = 0; i < details[d.source.index][d.target.index].length; i++) {
-                  figures += "<figure class='details_thumbs-chart-ad03fbe9'><img src=" + details_thumbs[d.source.index][d.target.index][i] + "><figcaption>" + details[d.source.index][d.target.index][i] + "</figcaption></figure>"
+                  figures += "<figure class='details_thumbs-chart-3e9aecd7'><img src=" + details_thumbs[d.source.index][d.target.index][i] + "><figcaption>" + details[d.source.index][d.target.index][i] + "</figcaption></figure>"
               }
         
               tippy_content = tippy_content +

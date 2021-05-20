@@ -146,8 +146,8 @@ def disciplineFreq(in_percentage = True):
 Main program
 """
 # disciplineCount()
-# disciplineFreq()
-disciplinePercentage()
+disciplineFreq(in_percentage=False)
+# disciplinePercentage()
 
 
 # TODO: learn to change a key in a dictionary
