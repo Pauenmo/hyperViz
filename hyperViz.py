@@ -141,7 +141,15 @@ def disciplineFreq(in_percentage = True):
         plt.ylabel("Number of attendants")
         plt.savefig('./final_outputs/number_of_disciplines.png')
 
-
+    dictionary = {}
+    i = 0 
+    for k in keys:
+        dictionary[str(k) + ' disciplines'] = values[i]
+        i += 1
+    filename = './final_outputs/attendants_per_discipline.csv'
+    with open(filename, 'w') as f:
+        for key in dictionary.keys():
+            f.write("%s,%s\n"%(key,dictionary[key]))
 """
 Main program
 """
@@ -150,12 +158,4 @@ disciplineFreq(in_percentage=False)
 # disciplinePercentage()
 
 
-# TODO: learn to change a key in a dictionary
 
-# dictionary = {'a': 1, 'b': 2, 'c':3}
-# print(dictionary)
-# # dictionary['new_key'] = dictionary['a']
-# dictionary['new_key'] = dictionary.pop('a')
-# print(dictionary)
-# # del dictionary['a']
-# print(dictionary)
