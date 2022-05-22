@@ -5,7 +5,7 @@ Testing around the concept of chord diagrams
 # TODO: make sure that the labels do not get cutoff
 
 from chord import Chord
-from sample_generator import *
+# from sample_generator import *
 import itertools
 import pandas as pd
 
@@ -33,10 +33,11 @@ def clean(l):
 # First step: automatically create the matrix, from the randomly generated sample
 
 #First, we read the csv into a dataframe
-data = pd.read_csv('2021.05.16.csv')
+#data = pd.read_csv('2021.05.16.csv')
+data = pd.read_csv("SS_2022_data.csv")
 #All the disciplines mentioned in the csv will be in this list
 # Use the two lines below when reading the disciplines from the csv
-total_disciplines = data.loc[:,'Disciplines']
+total_disciplines = data.loc[:,"What disciplines better represent your research activity, work or interests?"]
 total_disciplines = total_disciplines.tolist()
 # When taking a sample from the sample generator, use the following line
 # total_disciplines = genSample(15)
@@ -97,7 +98,8 @@ def genExactDicts():
                 entry_tuples = list(itertools.combinations(entry, arity))
                 for t in entry_tuples:
                     exact_dict[t] += 1
-        filename = './final_outputs/exactDict-arity-' + str(arity) + '.csv'
+        #filename = './final_outputs/exactDict-arity-' + str(arity) + '.csv'
+        filename = './SS_2022/exactDict-arity-' + str(arity) + '_SS_2022.csv'
         with open(filename, 'w') as f:
             for key in exact_dict.keys():
                 f.write("%s,%s\n"%(key,exact_dict[key]))
@@ -115,7 +117,8 @@ def genCumulativeDicts():
                 entry_tuples = list(itertools.combinations(entry, arity))
                 for t in entry_tuples:
                     cumulative_dict[t] += 1
-            filename = './final_outputs/cumulativeDict-arity-' + str(arity) + '.csv'
+            #filename = './final_outputs/cumulativeDict-arity-' + str(arity) + '.csv'
+            filename = './SS_2022/cumulativeDict-arity-' + str(arity) + 'SS_2022.csv'
             with open(filename, 'w') as f:
                 for key in cumulative_dict.keys():
                     f.write("%s,%s\n"%(key,cumulative_dict[key]))

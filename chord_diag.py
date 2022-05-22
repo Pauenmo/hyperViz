@@ -5,14 +5,18 @@ Testing around the concept of chord diagrams
 # TODO: make sure that the labels do not get cutoff
 
 # from hyperViz import disciplineCount
-from chord import Chord
-from sample_generator import *
+from plotapi import Chord
+#from sample_generator import *
 import itertools
 import pandas as pd
 
+Chord.set_license("pauenmo@gmail.com", "PLOTAPI-P-b665e3b3-2411-4f63-aa8e-20f561f40e57")
 
-Chord.user = "pauenmo@gmail.com"
-Chord.key = "CP-fdc99bda-356e-4947-a76d-2bd4b3cec8d2"
+# this is the old key
+#Chord.key = "CP-fdc99bda-356e-4947-a76d-2bd4b3cec8d2"
+#Chord.user = "pauenmo@gmail.com"
+#Chord.key = "PLOTAPI-P-b665e3b3-2411-4f63-aa8e-20f561f40e57"
+
 
 discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
                     'Linguistics', 'Arts', 'Mathematics', 'Cognitive Science',
@@ -38,10 +42,11 @@ def clean(l):
 # First step: automatically create the matrix, from the randomly generated sample
 
 #First, we read the csv into a dataframe
-data = pd.read_csv('finalNN2021.csv')
+#data = pd.read_csv('finalNN2021.csv')
+data = pd.read_csv('SS_2022_data.csv')
 #All the disciplines mentioned in the csv will be in this list
 # Use the two lines below when reading the disciplines from the csv
-total_disciplines = data.loc[:,"What disciplines better represent your research activity or interests?"]
+total_disciplines = data.loc[:,"What disciplines better represent your research activity, work or interests?"]
 total_disciplines = total_disciplines.tolist()
 # When taking a sample from the sample generator, use the following line
 # total_disciplines = genSample(15)
@@ -72,4 +77,4 @@ for entry in total_disciplines:
 
 
 hex_colors = ["#ff0000", "#80ff00", "#0040ff", "#ff9305", "#8000ff", "#19e36d", "#b51f71", "#c99c30", "#02ddfa", "#0a0a0a", "#ddff00"]
-Chord(matrix, discipline_names_renamed, colors=hex_colors, padding=0.15,font_size_large="15.4px", width=600).to_html('./final_outputs/chord_diagram.html')
+Chord(matrix, discipline_names_renamed, colors=hex_colors, padding=0.15,font_size_large="15.4px", width=600).to_html('./SS_2022/chord_diagram_SS_2022.html')

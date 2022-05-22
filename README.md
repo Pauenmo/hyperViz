@@ -15,10 +15,10 @@ Further testing and deciding on visual aspects
 
 For SS_2021:
 
-Histograms
+[x] Histograms
  - How many times a discipline was mentioned
  - How many people selected what number of disciplines (in absolute and in %)
 
-[] Chord diagram: how many times two disciplines were mentioned in the same resopns
-[] csv data
+[x] Chord diagram: how many times two disciplines were mentioned in the same resopns
+[x] csv data
 

@@ -7,11 +7,12 @@ import pandas as pd
 # matplotlib.use('MacOSX')
 import matplotlib.pyplot as plt   
 import matplotlib.ticker as mtick
-from sample_generator import *
+#from sample_generator import *
 
 
 #First, we read the csv into a dataframe
-data = pd.read_csv('finalNN2021.csv')
+# data = pd.read_csv('finalNN2021.csv')
+data = pd.read_csv('SS_2022_data.csv')
 
 #To see the headers of the columns:
 # headers = data.iloc[0,:]
@@ -25,7 +26,7 @@ discipline_names = ['Philosophy', 'Complexity', 'Anthropology', 'Physics',
 
 #All the disciplines mentioned in the csv will be in this list
 # Use the two lines below when reading the disciplines from the csv
-total_disciplines = data.loc[:,"What disciplines better represent your research activity or interests?"]
+total_disciplines = data.loc[:,"What disciplines better represent your research activity, work or interests?"]
 total_disciplines = total_disciplines.tolist()
 # When taking a sample from the sample generator, use the following line
 # total_disciplines = genSample(15)
@@ -65,7 +66,8 @@ def disciplinePercentage():
     plt.bar(discipline_percent.keys(), discipline_percent.values())
     plt.xticks(rotation = 90)
     plt.ylabel("Percentage of attendants")
-    plt.savefig('./final_outputs/people_per_discipline_percentage.png', bbox_inches='tight')
+    #plt.savefig('./final_outputs/people_per_discipline_percentage.png', bbox_inches='tight')
+    plt.savefig('./SS_2022/people_per_discipline_percentage_SS_2022.png', bbox_inches='tight')
 
 
 # This function draws the first basic bar chart: number of people in each discipline
@@ -97,7 +99,8 @@ def disciplineCount():
     plt.bar(discipline_count.keys(), discipline_count.values())
     plt.xticks(rotation = 90)
     plt.ylabel("Number of attendants")
-    plt.savefig('./final_outputs/people_per_discipline.png', bbox_inches='tight')
+    #plt.savefig('./final_outputs/people_per_discipline.png', bbox_inches='tight')
+    plt.savefig('./SS_2022/people_per_discipline_SS_2022.png', bbox_inches='tight')
 
 #This function draws the basic bar chart of how many people selected each number of disciplines
 def disciplineFreq(in_percentage = True):
@@ -136,26 +139,32 @@ def disciplineFreq(in_percentage = True):
     plt.xlabel("Number of disciplines")
     if in_percentage:
         plt.ylabel("Percentage of attendants")
-        plt.savefig('./final_outputs/number_of_disciplines_percentage.png')
+        #plt.savefig('./final_outputs/number_of_disciplines_percentage.png')
+        plt.savefig('./SS_2022/number_of_disciplines_percentage_SS_2022.png')
     else:
         plt.ylabel("Number of attendants")
-        plt.savefig('./final_outputs/number_of_disciplines.png')
+        #plt.savefig('./final_outputs/number_of_disciplines.png')
+        plt.savefig('./SS_2022/number_of_disciplines_SS_2022.png')
 
-    dictionary = {}
-    i = 0 
-    for k in keys:
-        dictionary[str(k) + ' disciplines'] = values[i]
-        i += 1
-    filename = './final_outputs/attendants_per_discipline.csv'
-    with open(filename, 'w') as f:
-        for key in dictionary.keys():
-            f.write("%s,%s\n"%(key,dictionary[key]))
+
+#    dictionary = {}
+#    i = 0 
+#    for k in keys:
+#        dictionary[str(k) + ' disciplines'] = values[i]
+#        i += 1
+#    filename = './final_outputs/attendants_per_discipline.csv'
+#    with open(filename, 'w') as f:
+#        for key in dictionary.keys():
+#            f.write("%s,%s\n"%(key,dictionary[key]))
 """
 Main program
 """
-# disciplineCount()
-disciplineFreq(in_percentage=False)
-# disciplinePercentage()
+
+if __name__ == "__main__":
+    disciplinePercentage()
+    disciplineCount()
+    disciplineFreq(in_percentage=True)
+    disciplineFreq(in_percentage=False)
 
 
 
