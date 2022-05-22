@@ -13,12 +13,3 @@ Currently can create:
 Visualisation of third degree relations: drawing the hypergraph as a normal graph  
 Further testing and deciding on visual aspects  
 
-For SS_2021:
-
-[x] Histograms
- - How many times a discipline was mentioned
- - How many people selected what number of disciplines (in absolute and in %)
-
-[x] Chord diagram: how many times two disciplines were mentioned in the same resopns
-[x] csv data
-
