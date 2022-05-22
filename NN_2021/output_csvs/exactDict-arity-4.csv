@@ -1,0 +1,330 @@
+('Philosophy', 'Complexity', 'Anthropology', 'Physics'),0
+('Philosophy', 'Complexity', 'Anthropology', 'Linguistics'),0
+('Philosophy', 'Complexity', 'Anthropology', 'Arts'),0
+('Philosophy', 'Complexity', 'Anthropology', 'Mathematics'),0
+('Philosophy', 'Complexity', 'Anthropology', 'Cognitive Science'),0
+('Philosophy', 'Complexity', 'Anthropology', 'Biology'),0
+('Philosophy', 'Complexity', 'Anthropology', 'Education'),0
+('Philosophy', 'Complexity', 'Anthropology', 'Computer Science'),0
+('Philosophy', 'Complexity', 'Physics', 'Linguistics'),0
+('Philosophy', 'Complexity', 'Physics', 'Arts'),0
+('Philosophy', 'Complexity', 'Physics', 'Mathematics'),0
+('Philosophy', 'Complexity', 'Physics', 'Cognitive Science'),0
+('Philosophy', 'Complexity', 'Physics', 'Biology'),1
+('Philosophy', 'Complexity', 'Physics', 'Education'),0
+('Philosophy', 'Complexity', 'Physics', 'Computer Science'),0
+('Philosophy', 'Complexity', 'Linguistics', 'Arts'),0
+('Philosophy', 'Complexity', 'Linguistics', 'Mathematics'),0
+('Philosophy', 'Complexity', 'Linguistics', 'Cognitive Science'),0
+('Philosophy', 'Complexity', 'Linguistics', 'Biology'),0
+('Philosophy', 'Complexity', 'Linguistics', 'Education'),0
+('Philosophy', 'Complexity', 'Linguistics', 'Computer Science'),0
+('Philosophy', 'Complexity', 'Arts', 'Mathematics'),0
+('Philosophy', 'Complexity', 'Arts', 'Cognitive Science'),0
+('Philosophy', 'Complexity', 'Arts', 'Biology'),0
+('Philosophy', 'Complexity', 'Arts', 'Education'),0
+('Philosophy', 'Complexity', 'Arts', 'Computer Science'),0
+('Philosophy', 'Complexity', 'Mathematics', 'Cognitive Science'),1
+('Philosophy', 'Complexity', 'Mathematics', 'Biology'),0
+('Philosophy', 'Complexity', 'Mathematics', 'Education'),0
+('Philosophy', 'Complexity', 'Mathematics', 'Computer Science'),1
+('Philosophy', 'Complexity', 'Cognitive Science', 'Biology'),0
+('Philosophy', 'Complexity', 'Cognitive Science', 'Education'),1
+('Philosophy', 'Complexity', 'Cognitive Science', 'Computer Science'),0
+('Philosophy', 'Complexity', 'Biology', 'Education'),0
+('Philosophy', 'Complexity', 'Biology', 'Computer Science'),1
+('Philosophy', 'Complexity', 'Education', 'Computer Science'),0
+('Philosophy', 'Anthropology', 'Physics', 'Linguistics'),0
+('Philosophy', 'Anthropology', 'Physics', 'Arts'),0
+('Philosophy', 'Anthropology', 'Physics', 'Mathematics'),0
+('Philosophy', 'Anthropology', 'Physics', 'Cognitive Science'),0
+('Philosophy', 'Anthropology', 'Physics', 'Biology'),0
+('Philosophy', 'Anthropology', 'Physics', 'Education'),0
+('Philosophy', 'Anthropology', 'Physics', 'Computer Science'),0
+('Philosophy', 'Anthropology', 'Linguistics', 'Arts'),0
+('Philosophy', 'Anthropology', 'Linguistics', 'Mathematics'),0
+('Philosophy', 'Anthropology', 'Linguistics', 'Cognitive Science'),0
+('Philosophy', 'Anthropology', 'Linguistics', 'Biology'),0
+('Philosophy', 'Anthropology', 'Linguistics', 'Education'),0
+('Philosophy', 'Anthropology', 'Linguistics', 'Computer Science'),0
+('Philosophy', 'Anthropology', 'Arts', 'Mathematics'),2
+('Philosophy', 'Anthropology', 'Arts', 'Cognitive Science'),0
+('Philosophy', 'Anthropology', 'Arts', 'Biology'),0
+('Philosophy', 'Anthropology', 'Arts', 'Education'),0
+('Philosophy', 'Anthropology', 'Arts', 'Computer Science'),0
+('Philosophy', 'Anthropology', 'Mathematics', 'Cognitive Science'),0
+('Philosophy', 'Anthropology', 'Mathematics', 'Biology'),0
+('Philosophy', 'Anthropology', 'Mathematics', 'Education'),0
+('Philosophy', 'Anthropology', 'Mathematics', 'Computer Science'),0
+('Philosophy', 'Anthropology', 'Cognitive Science', 'Biology'),0
+('Philosophy', 'Anthropology', 'Cognitive Science', 'Education'),0
+('Philosophy', 'Anthropology', 'Cognitive Science', 'Computer Science'),0
+('Philosophy', 'Anthropology', 'Biology', 'Education'),0
+('Philosophy', 'Anthropology', 'Biology', 'Computer Science'),0
+('Philosophy', 'Anthropology', 'Education', 'Computer Science'),0
+('Philosophy', 'Physics', 'Linguistics', 'Arts'),0
+('Philosophy', 'Physics', 'Linguistics', 'Mathematics'),0
+('Philosophy', 'Physics', 'Linguistics', 'Cognitive Science'),0
+('Philosophy', 'Physics', 'Linguistics', 'Biology'),0
+('Philosophy', 'Physics', 'Linguistics', 'Education'),0
+('Philosophy', 'Physics', 'Linguistics', 'Computer Science'),0
+('Philosophy', 'Physics', 'Arts', 'Mathematics'),0
+('Philosophy', 'Physics', 'Arts', 'Cognitive Science'),0
+('Philosophy', 'Physics', 'Arts', 'Biology'),0
+('Philosophy', 'Physics', 'Arts', 'Education'),0
+('Philosophy', 'Physics', 'Arts', 'Computer Science'),0
+('Philosophy', 'Physics', 'Mathematics', 'Cognitive Science'),0
+('Philosophy', 'Physics', 'Mathematics', 'Biology'),0
+('Philosophy', 'Physics', 'Mathematics', 'Education'),1
+('Philosophy', 'Physics', 'Mathematics', 'Computer Science'),1
+('Philosophy', 'Physics', 'Cognitive Science', 'Biology'),0
+('Philosophy', 'Physics', 'Cognitive Science', 'Education'),0
+('Philosophy', 'Physics', 'Cognitive Science', 'Computer Science'),1
+('Philosophy', 'Physics', 'Biology', 'Education'),0
+('Philosophy', 'Physics', 'Biology', 'Computer Science'),0
+('Philosophy', 'Physics', 'Education', 'Computer Science'),0
+('Philosophy', 'Linguistics', 'Arts', 'Mathematics'),0
+('Philosophy', 'Linguistics', 'Arts', 'Cognitive Science'),0
+('Philosophy', 'Linguistics', 'Arts', 'Biology'),0
+('Philosophy', 'Linguistics', 'Arts', 'Education'),0
+('Philosophy', 'Linguistics', 'Arts', 'Computer Science'),0
+('Philosophy', 'Linguistics', 'Mathematics', 'Cognitive Science'),0
+('Philosophy', 'Linguistics', 'Mathematics', 'Biology'),0
+('Philosophy', 'Linguistics', 'Mathematics', 'Education'),0
+('Philosophy', 'Linguistics', 'Mathematics', 'Computer Science'),0
+('Philosophy', 'Linguistics', 'Cognitive Science', 'Biology'),0
+('Philosophy', 'Linguistics', 'Cognitive Science', 'Education'),0
+('Philosophy', 'Linguistics', 'Cognitive Science', 'Computer Science'),0
+('Philosophy', 'Linguistics', 'Biology', 'Education'),0
+('Philosophy', 'Linguistics', 'Biology', 'Computer Science'),1
+('Philosophy', 'Linguistics', 'Education', 'Computer Science'),0
+('Philosophy', 'Arts', 'Mathematics', 'Cognitive Science'),0
+('Philosophy', 'Arts', 'Mathematics', 'Biology'),0
+('Philosophy', 'Arts', 'Mathematics', 'Education'),0
+('Philosophy', 'Arts', 'Mathematics', 'Computer Science'),0
+('Philosophy', 'Arts', 'Cognitive Science', 'Biology'),0
+('Philosophy', 'Arts', 'Cognitive Science', 'Education'),0
+('Philosophy', 'Arts', 'Cognitive Science', 'Computer Science'),0
+('Philosophy', 'Arts', 'Biology', 'Education'),0
+('Philosophy', 'Arts', 'Biology', 'Computer Science'),0
+('Philosophy', 'Arts', 'Education', 'Computer Science'),0
+('Philosophy', 'Mathematics', 'Cognitive Science', 'Biology'),1
+('Philosophy', 'Mathematics', 'Cognitive Science', 'Education'),0
+('Philosophy', 'Mathematics', 'Cognitive Science', 'Computer Science'),1
+('Philosophy', 'Mathematics', 'Biology', 'Education'),0
+('Philosophy', 'Mathematics', 'Biology', 'Computer Science'),0
+('Philosophy', 'Mathematics', 'Education', 'Computer Science'),0
+('Philosophy', 'Cognitive Science', 'Biology', 'Education'),0
+('Philosophy', 'Cognitive Science', 'Biology', 'Computer Science'),0
+('Philosophy', 'Cognitive Science', 'Education', 'Computer Science'),0
+('Philosophy', 'Biology', 'Education', 'Computer Science'),0
+('Complexity', 'Anthropology', 'Physics', 'Linguistics'),0
+('Complexity', 'Anthropology', 'Physics', 'Arts'),0
+('Complexity', 'Anthropology', 'Physics', 'Mathematics'),0
+('Complexity', 'Anthropology', 'Physics', 'Cognitive Science'),0
+('Complexity', 'Anthropology', 'Physics', 'Biology'),0
+('Complexity', 'Anthropology', 'Physics', 'Education'),0
+('Complexity', 'Anthropology', 'Physics', 'Computer Science'),0
+('Complexity', 'Anthropology', 'Linguistics', 'Arts'),0
+('Complexity', 'Anthropology', 'Linguistics', 'Mathematics'),0
+('Complexity', 'Anthropology', 'Linguistics', 'Cognitive Science'),0
+('Complexity', 'Anthropology', 'Linguistics', 'Biology'),0
+('Complexity', 'Anthropology', 'Linguistics', 'Education'),0
+('Complexity', 'Anthropology', 'Linguistics', 'Computer Science'),0
+('Complexity', 'Anthropology', 'Arts', 'Mathematics'),0
+('Complexity', 'Anthropology', 'Arts', 'Cognitive Science'),0
+('Complexity', 'Anthropology', 'Arts', 'Biology'),0
+('Complexity', 'Anthropology', 'Arts', 'Education'),0
+('Complexity', 'Anthropology', 'Arts', 'Computer Science'),0
+('Complexity', 'Anthropology', 'Mathematics', 'Cognitive Science'),0
+('Complexity', 'Anthropology', 'Mathematics', 'Biology'),0
+('Complexity', 'Anthropology', 'Mathematics', 'Education'),0
+('Complexity', 'Anthropology', 'Mathematics', 'Computer Science'),0
+('Complexity', 'Anthropology', 'Cognitive Science', 'Biology'),0
+('Complexity', 'Anthropology', 'Cognitive Science', 'Education'),0
+('Complexity', 'Anthropology', 'Cognitive Science', 'Computer Science'),0
+('Complexity', 'Anthropology', 'Biology', 'Education'),0
+('Complexity', 'Anthropology', 'Biology', 'Computer Science'),0
+('Complexity', 'Anthropology', 'Education', 'Computer Science'),0
+('Complexity', 'Physics', 'Linguistics', 'Arts'),0
+('Complexity', 'Physics', 'Linguistics', 'Mathematics'),0
+('Complexity', 'Physics', 'Linguistics', 'Cognitive Science'),0
+('Complexity', 'Physics', 'Linguistics', 'Biology'),0
+('Complexity', 'Physics', 'Linguistics', 'Education'),0
+('Complexity', 'Physics', 'Linguistics', 'Computer Science'),0
+('Complexity', 'Physics', 'Arts', 'Mathematics'),0
+('Complexity', 'Physics', 'Arts', 'Cognitive Science'),0
+('Complexity', 'Physics', 'Arts', 'Biology'),0
+('Complexity', 'Physics', 'Arts', 'Education'),0
+('Complexity', 'Physics', 'Arts', 'Computer Science'),0
+('Complexity', 'Physics', 'Mathematics', 'Cognitive Science'),0
+('Complexity', 'Physics', 'Mathematics', 'Biology'),0
+('Complexity', 'Physics', 'Mathematics', 'Education'),0
+('Complexity', 'Physics', 'Mathematics', 'Computer Science'),1
+('Complexity', 'Physics', 'Cognitive Science', 'Biology'),0
+('Complexity', 'Physics', 'Cognitive Science', 'Education'),0
+('Complexity', 'Physics', 'Cognitive Science', 'Computer Science'),0
+('Complexity', 'Physics', 'Biology', 'Education'),0
+('Complexity', 'Physics', 'Biology', 'Computer Science'),0
+('Complexity', 'Physics', 'Education', 'Computer Science'),0
+('Complexity', 'Linguistics', 'Arts', 'Mathematics'),0
+('Complexity', 'Linguistics', 'Arts', 'Cognitive Science'),0
+('Complexity', 'Linguistics', 'Arts', 'Biology'),0
+('Complexity', 'Linguistics', 'Arts', 'Education'),0
+('Complexity', 'Linguistics', 'Arts', 'Computer Science'),0
+('Complexity', 'Linguistics', 'Mathematics', 'Cognitive Science'),0
+('Complexity', 'Linguistics', 'Mathematics', 'Biology'),0
+('Complexity', 'Linguistics', 'Mathematics', 'Education'),0
+('Complexity', 'Linguistics', 'Mathematics', 'Computer Science'),0
+('Complexity', 'Linguistics', 'Cognitive Science', 'Biology'),0
+('Complexity', 'Linguistics', 'Cognitive Science', 'Education'),0
+('Complexity', 'Linguistics', 'Cognitive Science', 'Computer Science'),1
+('Complexity', 'Linguistics', 'Biology', 'Education'),0
+('Complexity', 'Linguistics', 'Biology', 'Computer Science'),0
+('Complexity', 'Linguistics', 'Education', 'Computer Science'),0
+('Complexity', 'Arts', 'Mathematics', 'Cognitive Science'),0
+('Complexity', 'Arts', 'Mathematics', 'Biology'),0
+('Complexity', 'Arts', 'Mathematics', 'Education'),0
+('Complexity', 'Arts', 'Mathematics', 'Computer Science'),0
+('Complexity', 'Arts', 'Cognitive Science', 'Biology'),0
+('Complexity', 'Arts', 'Cognitive Science', 'Education'),0
+('Complexity', 'Arts', 'Cognitive Science', 'Computer Science'),0
+('Complexity', 'Arts', 'Biology', 'Education'),0
+('Complexity', 'Arts', 'Biology', 'Computer Science'),0
+('Complexity', 'Arts', 'Education', 'Computer Science'),0
+('Complexity', 'Mathematics', 'Cognitive Science', 'Biology'),0
+('Complexity', 'Mathematics', 'Cognitive Science', 'Education'),0
+('Complexity', 'Mathematics', 'Cognitive Science', 'Computer Science'),0
+('Complexity', 'Mathematics', 'Biology', 'Education'),0
+('Complexity', 'Mathematics', 'Biology', 'Computer Science'),1
+('Complexity', 'Mathematics', 'Education', 'Computer Science'),0
+('Complexity', 'Cognitive Science', 'Biology', 'Education'),0
+('Complexity', 'Cognitive Science', 'Biology', 'Computer Science'),0
+('Complexity', 'Cognitive Science', 'Education', 'Computer Science'),0
+('Complexity', 'Biology', 'Education', 'Computer Science'),0
+('Anthropology', 'Physics', 'Linguistics', 'Arts'),0
+('Anthropology', 'Physics', 'Linguistics', 'Mathematics'),0
+('Anthropology', 'Physics', 'Linguistics', 'Cognitive Science'),0
+('Anthropology', 'Physics', 'Linguistics', 'Biology'),0
+('Anthropology', 'Physics', 'Linguistics', 'Education'),0
+('Anthropology', 'Physics', 'Linguistics', 'Computer Science'),0
+('Anthropology', 'Physics', 'Arts', 'Mathematics'),0
+('Anthropology', 'Physics', 'Arts', 'Cognitive Science'),0
+('Anthropology', 'Physics', 'Arts', 'Biology'),0
+('Anthropology', 'Physics', 'Arts', 'Education'),0
+('Anthropology', 'Physics', 'Arts', 'Computer Science'),0
+('Anthropology', 'Physics', 'Mathematics', 'Cognitive Science'),0
+('Anthropology', 'Physics', 'Mathematics', 'Biology'),0
+('Anthropology', 'Physics', 'Mathematics', 'Education'),0
+('Anthropology', 'Physics', 'Mathematics', 'Computer Science'),0
+('Anthropology', 'Physics', 'Cognitive Science', 'Biology'),0
+('Anthropology', 'Physics', 'Cognitive Science', 'Education'),0
+('Anthropology', 'Physics', 'Cognitive Science', 'Computer Science'),0
+('Anthropology', 'Physics', 'Biology', 'Education'),0
+('Anthropology', 'Physics', 'Biology', 'Computer Science'),0
+('Anthropology', 'Physics', 'Education', 'Computer Science'),0
+('Anthropology', 'Linguistics', 'Arts', 'Mathematics'),0
+('Anthropology', 'Linguistics', 'Arts', 'Cognitive Science'),0
+('Anthropology', 'Linguistics', 'Arts', 'Biology'),0
+('Anthropology', 'Linguistics', 'Arts', 'Education'),0
+('Anthropology', 'Linguistics', 'Arts', 'Computer Science'),0
+('Anthropology', 'Linguistics', 'Mathematics', 'Cognitive Science'),0
+('Anthropology', 'Linguistics', 'Mathematics', 'Biology'),0
+('Anthropology', 'Linguistics', 'Mathematics', 'Education'),0
+('Anthropology', 'Linguistics', 'Mathematics', 'Computer Science'),0
+('Anthropology', 'Linguistics', 'Cognitive Science', 'Biology'),0
+('Anthropology', 'Linguistics', 'Cognitive Science', 'Education'),0
+('Anthropology', 'Linguistics', 'Cognitive Science', 'Computer Science'),0
+('Anthropology', 'Linguistics', 'Biology', 'Education'),0
+('Anthropology', 'Linguistics', 'Biology', 'Computer Science'),0
+('Anthropology', 'Linguistics', 'Education', 'Computer Science'),0
+('Anthropology', 'Arts', 'Mathematics', 'Cognitive Science'),0
+('Anthropology', 'Arts', 'Mathematics', 'Biology'),0
+('Anthropology', 'Arts', 'Mathematics', 'Education'),0
+('Anthropology', 'Arts', 'Mathematics', 'Computer Science'),0
+('Anthropology', 'Arts', 'Cognitive Science', 'Biology'),0
+('Anthropology', 'Arts', 'Cognitive Science', 'Education'),0
+('Anthropology', 'Arts', 'Cognitive Science', 'Computer Science'),0
+('Anthropology', 'Arts', 'Biology', 'Education'),0
+('Anthropology', 'Arts', 'Biology', 'Computer Science'),0
+('Anthropology', 'Arts', 'Education', 'Computer Science'),0
+('Anthropology', 'Mathematics', 'Cognitive Science', 'Biology'),0
+('Anthropology', 'Mathematics', 'Cognitive Science', 'Education'),0
+('Anthropology', 'Mathematics', 'Cognitive Science', 'Computer Science'),0
+('Anthropology', 'Mathematics', 'Biology', 'Education'),0
+('Anthropology', 'Mathematics', 'Biology', 'Computer Science'),0
+('Anthropology', 'Mathematics', 'Education', 'Computer Science'),0
+('Anthropology', 'Cognitive Science', 'Biology', 'Education'),0
+('Anthropology', 'Cognitive Science', 'Biology', 'Computer Science'),0
+('Anthropology', 'Cognitive Science', 'Education', 'Computer Science'),0
+('Anthropology', 'Biology', 'Education', 'Computer Science'),0
+('Physics', 'Linguistics', 'Arts', 'Mathematics'),0
+('Physics', 'Linguistics', 'Arts', 'Cognitive Science'),0
+('Physics', 'Linguistics', 'Arts', 'Biology'),0
+('Physics', 'Linguistics', 'Arts', 'Education'),0
+('Physics', 'Linguistics', 'Arts', 'Computer Science'),0
+('Physics', 'Linguistics', 'Mathematics', 'Cognitive Science'),0
+('Physics', 'Linguistics', 'Mathematics', 'Biology'),0
+('Physics', 'Linguistics', 'Mathematics', 'Education'),0
+('Physics', 'Linguistics', 'Mathematics', 'Computer Science'),0
+('Physics', 'Linguistics', 'Cognitive Science', 'Biology'),0
+('Physics', 'Linguistics', 'Cognitive Science', 'Education'),0
+('Physics', 'Linguistics', 'Cognitive Science', 'Computer Science'),0
+('Physics', 'Linguistics', 'Biology', 'Education'),0
+('Physics', 'Linguistics', 'Biology', 'Computer Science'),0
+('Physics', 'Linguistics', 'Education', 'Computer Science'),0
+('Physics', 'Arts', 'Mathematics', 'Cognitive Science'),0
+('Physics', 'Arts', 'Mathematics', 'Biology'),1
+('Physics', 'Arts', 'Mathematics', 'Education'),0
+('Physics', 'Arts', 'Mathematics', 'Computer Science'),0
+('Physics', 'Arts', 'Cognitive Science', 'Biology'),0
+('Physics', 'Arts', 'Cognitive Science', 'Education'),0
+('Physics', 'Arts', 'Cognitive Science', 'Computer Science'),0
+('Physics', 'Arts', 'Biology', 'Education'),0
+('Physics', 'Arts', 'Biology', 'Computer Science'),0
+('Physics', 'Arts', 'Education', 'Computer Science'),0
+('Physics', 'Mathematics', 'Cognitive Science', 'Biology'),0
+('Physics', 'Mathematics', 'Cognitive Science', 'Education'),0
+('Physics', 'Mathematics', 'Cognitive Science', 'Computer Science'),0
+('Physics', 'Mathematics', 'Biology', 'Education'),0
+('Physics', 'Mathematics', 'Biology', 'Computer Science'),0
+('Physics', 'Mathematics', 'Education', 'Computer Science'),0
+('Physics', 'Cognitive Science', 'Biology', 'Education'),0
+('Physics', 'Cognitive Science', 'Biology', 'Computer Science'),0
+('Physics', 'Cognitive Science', 'Education', 'Computer Science'),0
+('Physics', 'Biology', 'Education', 'Computer Science'),0
+('Linguistics', 'Arts', 'Mathematics', 'Cognitive Science'),0
+('Linguistics', 'Arts', 'Mathematics', 'Biology'),0
+('Linguistics', 'Arts', 'Mathematics', 'Education'),0
+('Linguistics', 'Arts', 'Mathematics', 'Computer Science'),0
+('Linguistics', 'Arts', 'Cognitive Science', 'Biology'),0
+('Linguistics', 'Arts', 'Cognitive Science', 'Education'),0
+('Linguistics', 'Arts', 'Cognitive Science', 'Computer Science'),0
+('Linguistics', 'Arts', 'Biology', 'Education'),0
+('Linguistics', 'Arts', 'Biology', 'Computer Science'),0
+('Linguistics', 'Arts', 'Education', 'Computer Science'),0
+('Linguistics', 'Mathematics', 'Cognitive Science', 'Biology'),0
+('Linguistics', 'Mathematics', 'Cognitive Science', 'Education'),0
+('Linguistics', 'Mathematics', 'Cognitive Science', 'Computer Science'),0
+('Linguistics', 'Mathematics', 'Biology', 'Education'),0
+('Linguistics', 'Mathematics', 'Biology', 'Computer Science'),0
+('Linguistics', 'Mathematics', 'Education', 'Computer Science'),0
+('Linguistics', 'Cognitive Science', 'Biology', 'Education'),0
+('Linguistics', 'Cognitive Science', 'Biology', 'Computer Science'),0
+('Linguistics', 'Cognitive Science', 'Education', 'Computer Science'),0
+('Linguistics', 'Biology', 'Education', 'Computer Science'),0
+('Arts', 'Mathematics', 'Cognitive Science', 'Biology'),0
+('Arts', 'Mathematics', 'Cognitive Science', 'Education'),0
+('Arts', 'Mathematics', 'Cognitive Science', 'Computer Science'),0
+('Arts', 'Mathematics', 'Biology', 'Education'),0
+('Arts', 'Mathematics', 'Biology', 'Computer Science'),0
+('Arts', 'Mathematics', 'Education', 'Computer Science'),0
+('Arts', 'Cognitive Science', 'Biology', 'Education'),0
+('Arts', 'Cognitive Science', 'Biology', 'Computer Science'),0
+('Arts', 'Cognitive Science', 'Education', 'Computer Science'),0
+('Arts', 'Biology', 'Education', 'Computer Science'),0
+('Mathematics', 'Cognitive Science', 'Biology', 'Education'),0
+('Mathematics', 'Cognitive Science', 'Biology', 'Computer Science'),0
+('Mathematics', 'Cognitive Science', 'Education', 'Computer Science'),1
+('Mathematics', 'Biology', 'Education', 'Computer Science'),0
+('Cognitive Science', 'Biology', 'Education', 'Computer Science'),0
